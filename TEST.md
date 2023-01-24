@@ -1,6 +1,6 @@
 # 1. Explain what is Long polling
 
-Long polling is a method of achieving near real-time communication by repeatedly sending HTTP requests to a server, waiting for a response, and then sending another request. This is in contrast to short polling, which sends a request at a fixed interval regardless of whether a response has been received.
+As i have recently learned, Long polling is a method of achieving near real-time communication by repeatedly sending HTTP requests to a server, waiting for a response, and then sending another request. This is in contrast to short polling, which sends a request at a fixed interval regardless of whether a response has been received.
 
 ## a. provide a example implementation of long polling
 
@@ -32,7 +32,7 @@ Cookies and local storage are both ways to store data in a user's browser, but t
 
 Cookies are small text files that are sent by the server and stored on the user's computer. They are typically used to track user preferences and login information. They have a size limit and are sent with every request to the server.
 
-Local storage, on the other hand, is a client-side storage mechanism that allows for storing key-value pairs in the browser. It has a larger storage limit than cookies and data is not sent to the server with every request. Local storage is accessible to JavaScript code running on the page, whereas cookies can also be read by the server.
+Local storage is a client-side storage mechanism that allows for storing key-value pairs in the browser. It has a larger storage limit than cookies and data is not sent to the server with every request. Local storage is accessible to JavaScript code running on the page, whereas cookies can also be read by the server.
 
 # 3. How many HTTP methods are there? explain each of them.
 
@@ -320,14 +320,14 @@ Some pitfalls when creating websites that affect accessibility include:
 - Not providing text alternatives for non-text content
 - Not providing sufficient time for users to read and use content.
 
-# 11. Name 5 things you do not know and what to learn.
+# 11. Name 5 things you do not know and want to learn.
 
-### 1.
+- React framer motions
 
-### 2.
+- React state management with Redux
 
-### 3.
+- Advanced UX/UI design
 
-### 4.
+- Web security
 
-### 5.
+- Graphic design tools such as Adobe illustrator
