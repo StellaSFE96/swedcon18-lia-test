@@ -1,6 +1,20 @@
 # 1. Explain what is Long polling
 
+Long polling is a method of achieving near real-time communication by repeatedly sending HTTP requests to a server, waiting for a response, and then sending another request. This is in contrast to short polling, which sends a request at a fixed interval regardless of whether a response has been received.
+
 ## a. provide a example implementation of long polling
+
+```javascript
+function longPoll() {
+  fetch("/data")
+    .then((response) => response.json())
+    .then((data) => {
+      // Handle new data
+      longPoll();
+    });
+}
+longPoll();
+```
 
 ## b. what other alternatives are available instead of long polling explain at least one if any
 
@@ -74,7 +88,7 @@
 
 ## c. write a commit message for the following code change (created a new component and imported it into the the navbar component, the component shows up only when a user is logged and shows time left before the current session ends )
 
-# 10. What is Accessibility on the web why is it important?
+# 10. what is Accessibility on the web why is it important?
 
 ## a. what are the benefit of building an accessible website
 
