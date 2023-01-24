@@ -202,19 +202,19 @@ function Counter() {
 
 ## a. Challenges 2/3 completed, last one was completed with the help of the provided solution.
 
-### - challenge 1 of 3:
+### challenge 1 of 3:
 
 ![Code snippet of challenge 1a](/assets/challenge-one.png "image of code")
 
-### - challenge 2 of 3:
+### challenge 2 of 3:
 
 ![Code snippet of challenge 1b](/assets/challenge-two.png)
 
 ## b. Challenge 2
 
-### - ![Code snippet of challenge 2a](/assets/challenge-four.png)
+### ![Code snippet of challenge 2a](/assets/challenge-four.png)
 
-### - ![Code snippet of challenge 2b](/assets/challenge-five.png)
+### ![Code snippet of challenge 2b](/assets/challenge-five.png)
 
 <!-- ![Code snippet of challenge 2c](/assets/challenge-five.png) -->
 <!-- ![Code snippet of challenge 2d](/assets/challenge-five.png) -->
