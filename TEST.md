@@ -90,54 +90,238 @@ Yes, you can return multiple elements from a component by wrapping them in a con
 
 Component-Driven Development (CDD) is a development approach in which the user interface is built by composing small, reusable components. This approach allows for a more modular, maintainable codebase and promotes the reuse of components across different parts of the application. React encourages this development approach by providing a way to build and compose components.
 
-## i. provide an example implementation of the following components:
+## i. Provide an example implementation of the following components:
 
-### i.Login Button
+### i. login Button:
 
-### ii. A Group Component with the following values “React” ,“LIA” , “Carelyo“ each value can be selected
+```javascript
+import React from "react";
 
-### iii. A Card Component with the following information (Name, Email, Image, Button)
+function LoginButton() {
+  const handleClick = () => {
+    // Perform login logic
+  };
 
-### iv. An api call fetching information
+  return <button onClick={handleClick}>Login</button>;
+}
 
-### v. a custom hook of your choice
+export default LoginButton;
+```
 
-# 6. complete the following challenges
+### ii. a Group Component with the following values “React” ,“LIA” , “Carelyo“ each value can be selected:
 
-## a. Challenge 1
+```javascript
+function GroupComponent() {
+  const options = ["React", "LIA", "Carelyo"];
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  return (
+    <div>
+      {options.map((option) => (
+        <button key={option} onClick={() => setSelectedOption(option)}>
+          {option}
+        </button>
+      ))}
+      <p>Selected option: {selectedOption}</p>
+    </div>
+  );
+}
+
+export default GroupComponent;
+```
+
+### iii. a Card Component with the following information (Name, Email, Image, Button):
+
+```javascript
+function CardComponent({ name, email, imageUrl, onButtonClick }) {
+  return (
+    <div>
+      <img src={imageUrl} alt={name} />
+      <p>Name: {name}</p>
+      <p>Email: {email}</p>
+      <button onClick={onButtonClick}>Button</button>
+    </div>
+  );
+}
+
+export default CardComponent;
+```
+
+### iv. an api call fetching information:
+
+```javascript
+import axios from "axios";
+
+async function fetchData() {
+  try {
+    const response = await axios.get("https://example.com/api/data");
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+### v. a custom hook of your choice:
+
+```javascript
+import { useState } from "react";
+
+function useCounter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+
+  return { count, increment, decrement };
+}
+
+export default useCounter;
+```
+
+In the above example, the custom hook useCounter returns an object containing the current count, and functions to increment and decrement the count. The hook can be used in a component like this:
+
+```javascript
+import React, { useState } from "react";
+import useCounter from "./useCounter";
+
+function Counter() {
+  const { count, increment, decrement } = useCounter();
+
+  return (
+    <div>
+      <button onClick={decrement}>-</button>
+      <span>{count}</span>
+      <button onClick={increment}>+</button>
+    </div>
+  );
+}
+```
+
+# 6. Complete the following challenges
+
+## a. Challenges 2/3 completed, last one was completed with the help of the provided solution.
+
+![Code snippet of challemge 1a](/assets/challenge-one.png "image of code")
+![Code snippet of challemge 1b](/assets/challenge-two.png "image of code")
 
 ## b. Challenge 2
 
+![Code snippet of challemge 1b](/assets/challenge-two.png "image of code")
+![Code snippet of challemge 1b](/assets/challenge-two.png "image of code")
+
 ## c. Challenge 3
+
+![Code snippet of challemge 1b](/assets/challenge-two.png "image of code")
 
 # 7. What is typescript?
 
+TypeScript is an open-source programming language that is a super set of JavaScript. It adds optional static typing, class-based object-oriented programming, and other features to JavaScript.
+
 ## a. what are the benefits of typescript?
+
+- Improved code readability and maintainability by catching errors at compile-time
+- Improved developer productivity by providing better tooling and editor support
+- Improved code quality by enforcing a consistent code style
+- Improved collaboration by making it easier to understand and work with code written by others
 
 ## b. provide positive and negative of typescript
 
+Positive impacts:
+
+- Improved code quality and maintainability
+- Better tooling and editor support
+- Easier collaboration
+
+Negative impacts:
+
+- Additional setup and configuration is required
+- More time spent on type annotations
+- Some developers may not be familiar with the syntax
+
 ## c. provide a code snippet in both javascript and typescript
+
+Javascript:
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+```
+
+Typescript:
+
+```javascript
+function add(a: number, b: number): number {
+  return a + b;
+}
+```
 
 # 8. What is a user story?
 
+A user story is a short, simple description of a feature or functionality that a user needs or wants. It is typically written from the user's perspective and used to capture the requirements of a project.
+
 ## a. write a simple example user story
+
+A simple example user story: "As a user, I want to be able to search for products on the website so that I can easily find what I'm looking for."
 
 ## b. use figma or excalidraw visualize it
 
+[Insert Figma or Excalidraw image here]
+
 ## c. how can user stories be used in development
+
+User stories can be used in development as a way to guide the development process. They provide a clear understanding of what the end user needs or wants, which can be used to inform the design and development of the feature or functionality.
 
 # 9. what is git?
 
+Git is a distributed version control system (VCS) used for software development and other version control tasks. It allows developers to track changes made to the code, collaborate with others, and revert to previous versions of the code if necessary.
+
 ## a. what is git hooks
+
+Git hooks are scripts that run automatically when certain Git events occur. They can be used to perform tasks such as validating code before it is committed, or automatically deploying code when it is pushed to a remote repository.
 
 ## b. what is conventional commit
 
+Conventional commits is a specification for adding human-readable meaning to commit messages. It helps to generate more useful and structured commit history, making it easier to understand what changes were made and why.
+
 ## c. write a commit message for the following code change (created a new component and imported it into the the navbar component, the component shows up only when a user is logged and shows time left before the current session ends )
+
+Commit message: "feat: created a new 'SessionExpiration' component and added it to the navbar, now displays remaining session time for logged-in users."
 
 # 10. what is Accessibility on the web why is it important?
 
+Accessibility on the web refers to the design and development of websites, applications, and tools to be inclusive of people with disabilities. This includes people with visual, auditory, motor, and cognitive disabilities.
+
 ## a. what are the benefit of building an accessible website
+
+The benefits of building an accessible website include:
+
+- Improved usability for people with disabilities
+- Better search engine optimization
+- Increased potential user base
+- Legal compliance with accessibility laws
 
 ## b. name some pitfalls when creating website that affect accessibility
 
+Some pitfalls when creating websites that affect accessibility include:
+
+- Not providing alternative text for images
+- Using color alone to convey information
+- Not providing keyboard-only navigation
+- Not providing sufficient contrast between text and background
+- Using fixed-width design elements
+- Not providing text alternatives for non-text content
+- Not providing sufficient time for users to read and use content.
+
 # 11. Name 5 things you do not know and what to learn.
+
+### 1.
+
+### 2.
+
+### 3.
+
+### 4.
+
+### 5.
