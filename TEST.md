@@ -64,7 +64,8 @@ The three rules of Hooks are:
 - Only call Hooks at the top level of your component or your own Hooks.
 - Only call Hooks from React functions.
 - The order of Hooks calls must be the same between renders.
-- These rules exist to ensure that Hooks are called in a predictable order and to prevent bugs caused by state updates in unexpected places.
+
+These rules exist to ensure that Hooks are called in a predictable order and to prevent bugs caused by state updates in unexpected places.
 
 ## c. what is jsx?
 
