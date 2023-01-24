@@ -200,7 +200,7 @@ function Counter() {
 
 # 6. Complete the following challenges
 
-## a. Challenges 2/3 completed, last one was completed with the help of the provided solution.
+## a. Challenge sequence 1. (last one was completed with the help of the provided solution)
 
 ### challenge 1 of 3:
 
@@ -210,16 +210,25 @@ function Counter() {
 
 ![Code snippet of challenge 1b](/assets/challenge-two.png)
 
-## b. Challenge 2
+## b. Challenge sequence 2
 
-### ![Code snippet of challenge 2a](/assets/challenge-four.png)
+### challenge 1 of 4:
 
-### ![Code snippet of challenge 2b](/assets/challenge-five.png)
+![Code snippet of challenge 2a](/assets/challenge-four.png)
 
-<!-- ![Code snippet of challenge 2c](/assets/challenge-five.png) -->
+### challenge 2 of 4:
+
+![Code snippet of challenge 2b](/assets/challenge-five.png)
+
+### challenge 3 of 4:
+
+![Code snippet of challenge 2c](/assets/challenge-six.png)
+
+### challenge 4 of 4:
+
 <!-- ![Code snippet of challenge 2d](/assets/challenge-five.png) -->
 
-## c. Challenge 3
+## c. Challenge sequence 3
 
 <!-- ![Code snippet of challenge 1b](/assets/challenge-two.png "image of code") -->
 
