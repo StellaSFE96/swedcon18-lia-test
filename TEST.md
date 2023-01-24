@@ -200,15 +200,19 @@ function Counter() {
 
 # 6. Complete the following challenges
 
-## a. Challenge sequence 1. (last one was completed with the help of the provided solution)
+## a. Challenge sequence 1
 
 ### challenge 1 of 3:
 
-![Code snippet of challenge 1a](/assets/challenge-one.png "image of code")
+![Code snippet of challenge 1a](/assets/challenge-one.png)
 
 ### challenge 2 of 3:
 
 ![Code snippet of challenge 1b](/assets/challenge-two.png)
+
+### challenge 3 of 3:
+
+Solved with the help of provided solution.
 
 ## b. Challenge sequence 2
 
@@ -226,11 +230,17 @@ function Counter() {
 
 ### challenge 4 of 4:
 
-<!-- ![Code snippet of challenge 2d](/assets/challenge-five.png) -->
+![Code snippet of challenge 2d](/assets/challenge-seven.png)
 
 ## c. Challenge sequence 3
 
-<!-- ![Code snippet of challenge 1b](/assets/challenge-two.png "image of code") -->
+### challenge 1 of 2:
+
+![Code snippet of challenge 3a](/assets/challenge-eight.png)
+
+### challenge 2 of 2:
+
+Solved with the help of provided solution.
 
 # 7. What is typescript?
 
