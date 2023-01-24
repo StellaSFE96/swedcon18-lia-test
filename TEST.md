@@ -279,7 +279,7 @@ function add(a, b) {
 
 Typescript:
 
-```javascript
+```typescript
 function add(a: number, b: number): number {
   return a + b;
 }
@@ -291,11 +291,11 @@ A user story is a short, simple description of a feature or functionality that a
 
 ## a. write a simple example user story
 
-A simple example user story: "As a user, I want to be able to search for products on the website so that I can easily find what I'm looking for."
+A simple example user story: "As a user, I want to be able to find important content or search for products on the website header or navbar so that I can easily find what I'm looking for."
 
 ## b. use figma or excalidraw visualize it
 
-[Insert Figma or Excalidraw image here]
+![Image of figma sketch of a nav/ search bar](/assets/nav.png)
 
 ## c. how can user stories be used in development
 
